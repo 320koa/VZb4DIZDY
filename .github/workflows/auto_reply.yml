@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Greet new proposition
-        uses: peter-evans/create-or-update-comment@ca08ebd5dc95aa0cd97021e9708fcd6b87138c9b
+        uses: peter-evans/create-or-update-comment@71345be0265236311c031f5c7866368bd1eff043
         if: github.event.label.name == '📄 Grant application'
         with:
           token: ${{ secrets.CONCRETE_ACTIONS_TOKEN }}
